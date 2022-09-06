@@ -10,7 +10,13 @@ const app = new App({
   port: parsed.PORT || 3000
 })
 
-app.message('hello', async ({ message, say }) => {
+app.message('hello', async ({ message, say, client }) => {
+  await client.reactions.add({
+    name: "doughnut",
+    channel: message.channel,
+    timestamp: message.ts,
+  });
+
   // イベントがトリガーされたチャンネルに say() でメッセージを送信します
   await say({
     blocks: [
