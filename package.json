@@ -4,6 +4,7 @@
   "description": "This repository when I run the tutorial code at the following URL. https://slack.dev/bolt-js/ja-jp/tutorial/getting-started",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/kkeeth/hello-boltjs#readme",
   "dependencies": {
-    "@slack/bolt": "^3.12.1"
+    "@slack/bolt": "^3.12.1",
+    "dotenv": "^16.0.2"
   }
 }
